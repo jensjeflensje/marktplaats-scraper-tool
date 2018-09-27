@@ -1,7 +1,7 @@
 from marktplaats import Marktplaats
 
 #initialize the object with the query and all its available filters
-mp_object = Marktplaats("i5-4460", zip="1016LV", distance=10000, pricefrom=0, priceto=100)
+mp_object = Marktplaats("i5-4460", zip="1016LV", distance=10000, pricefrom=0, priceto=100, categoryid=322)
 
 #get 5 listings, default limit is 10
 listings = mp_object.get_listings(limit=5)
